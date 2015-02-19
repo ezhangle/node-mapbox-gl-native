@@ -4,15 +4,23 @@ matrix:
   include:
   - os: linux
     compiler: clang
+    env:
+    - NODE_EXE: "node"
+    - NODE_VERSION: "0.10.35"
   - os: linux
     compiler: gcc
-    env: JOBS=8
+    env:
+    - NODE_EXE: "node"
+    - NODE_VERSION: "0.10.35"
+    - JOBS=8
   - os: osx
     compiler: clang
+    env:
+    - NODE_EXE: "node"
+    - NODE_VERSION: "0.10.35"
 
 env:
   global:
-  - NODE_VERSION: 0.10.35
   - LD_LIBRARY_PATH: "/usr/local/lib"
   - secure: pz/HAMQpnde//JJi3f+RcW32APN6g3QyFAH41JlZwgsM5Daj9RRoXqUcNg4hEyTvlThtc5t+wQQ2ejYAjMwDu00GAzRFJ03Sm45w2fPvith9fu4crXsyPUvWUfWPC0ajTXzorN4cwFwOoMoeo9DihLwb0EC0n4T6jWdBCae3k+s=
   - secure: jYFAOQoMZkZVyc5AFPBKhR9oDqp5CciwCxFhVEHVjdImM+8V60loKazyw+bVLIjzKLnQbKKdiDudWL9TE1ylK/XSlF3K7o4gU2vIh5WzosKnU70Sanxd6tHt/Ui5eK+bAymKHbLdGiXIZtBZE0tML6+wgJ9vhV4ZKna5dM9tps4=
